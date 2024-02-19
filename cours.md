@@ -55,3 +55,4 @@ Balise script après le code html pour plus de performance.(Si fichier Js volumi
 
 Les fichiers commencant par un point sont des fichiers cachés
 
+Lecture intéressante : Pro git by Scott Chacon
