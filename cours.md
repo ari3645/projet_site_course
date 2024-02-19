@@ -29,6 +29,10 @@ Savoir le statut de Git : git status
 
 Commit = sauvegarde
 
+Permet à Git de détecter les modifications de tout les fichiers du documents main : git add .
+
+Faire une sauvegarde (en donnant un message) : git commit -m "first commit"
+
 ### Remarques
 
 Balise script après le code html pour plus de performance.(Si fichier Js volumineux car code excécuter dans l'ordre)
