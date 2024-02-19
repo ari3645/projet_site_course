@@ -19,8 +19,61 @@ function division(a,b){
 
 }
 
-let nb1 = Number(nombre1.value);
-let nb2 = Number(nombre2.value);
-let operateur = operateur.value;
-let resultat = 0;
-alert(nb1);
+let equation = document.getElementById("equation");
+
+function ajouteroperation(valeur) {
+    equation.value += valeur;
+}
+
+function reset() {
+    equation.value = "";
+}
+
+function calculer(equation) {
+    let nombre1 = "";
+    let nombre2 = "";
+    let operateur = "";
+    let resultat = 0;
+    let faire_calcul = false;
+    let liste_operateurs = ["+","-","*","/"];
+    let index_operateur = 0;
+    // console.log(equation.value);
+    
+    for (let i = 0; i < equation.value.length; i++) { 
+        // console.log(equation.value[i]);
+        if (liste_operateurs.includes(equation.value[i])) {
+            operateur = equation.value[i];
+            index_operateur = i;
+            faire_calcul = true;
+
+        }
+    }
+    index_operateur = index_operateur + 1-1;
+    if (faire_calcul === true) {
+        for (j=0; j<index_operateur; j++) {
+            // console.log(equation.value[j]);
+            nombre1 = nombre1 + equation.value[j];
+        }
+        for (k=index_operateur+1; k<equation.value.length; k++) {
+            // console.log(equation.value[k]);
+            nombre2 = nombre2 + equation.value[k];
+        }
+    }
+
+    nombre1 = parseInt(nombre1);
+    nombre2 = parseInt(nombre2);
+    // console.log(nombre1);
+    // console.log(nombre2);
+    if (operateur === "+") {
+        resultat = addition(nombre1,nombre2);
+    } else if (operateur === "-") {
+        resultat = soustraction(nombre1,nombre2);
+    } else if (operateur === "*") {
+        resultat = multiplication(nombre1,nombre2);
+    } else if (operateur === "/") {
+        resultat = division(nombre1,nombre2);
+    }
+
+    console.log(resultat);
+    return 0;
+}
