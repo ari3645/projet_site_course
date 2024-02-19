@@ -19,6 +19,8 @@ function division(a,b){
 
 }
 
-document.querySelector("html").addEventListener("click", function(){
-    alert("Aïe, arrêtez de cliquer !!");
-});
+let nb1 = Number(nombre1.value);
+let nb2 = Number(nombre2.value);
+let operateur = operateur.value;
+let resultat = 0;
+alert(nb1);
