@@ -24,6 +24,31 @@ Séléctionner des éléments par ID :
 ```sh
 let element = document.getElementById("monID")
 ```
+Séléctionner des éléments par classe :
+
+```sh
+let element = document.getElementByClassName("maClasse")
+```
+
+Séléctionner des éléments par balise :
+
+```sh
+let element = document.getElementByTagName("maBalise")
+```
+
+Changer le texte :
+
+```sh
+document.getElementById("monId").textContent = "Nouveau texte !";
+```
+
+Ajouter un écouteur d'évenements :
+
+```sh
+document.getElementById("monBouton").addEventListener("click",function(){alert("Bouton cliqué !");
+});
+```
+
 
 ### Git 
 
