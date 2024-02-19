@@ -21,17 +21,33 @@
 
 ### Git 
 
-Initialisé Git : Git init
+Initialisé Git : 
+
+```sh
+Git init
+```
 
 Supprimer Git : supprimer le fichier .git
 
-Savoir le statut de Git : git status
+Savoir le statut de Git : 
+
+```sh
+git status
+```
 
 Commit = sauvegarde
 
-Permet à Git de détecter les modifications de tout les fichiers du documents main : git add .
+Permet à Git de détecter les modifications de tout les fichiers du documents main : 
 
-Faire une sauvegarde (en donnant un message) : git commit -m "first commit"
+```sh
+git add .
+```
+
+Faire une sauvegarde (en donnant un message) : 
+
+```sh
+git commit -m "first commit"
+```
 
 ### Remarques
 
