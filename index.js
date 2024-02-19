@@ -15,3 +15,8 @@ let test2 = "test2";
 const test3 = "test3";
 
 ChangerTitre();
+
+// CamelCase
+const monTitre = document.getElementById("titre");
+
+console.log(monTitre);
