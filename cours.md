@@ -25,7 +25,6 @@ Séléctionner des éléments par ID :
 let element = document.getElementById("monID")
 ```
 
-
 ### Git 
 
 Initialisé Git : 
