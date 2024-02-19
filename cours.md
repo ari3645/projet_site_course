@@ -17,7 +17,14 @@
 
  Permet de coder/travailler dans des environnements différents.
 
-## JS en général
+## Commande JS
+
+Séléctionner des éléments par ID :
+
+```sh
+let element = document.getElementById("monID")
+```
+
 
 ### Git 
 
