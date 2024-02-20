@@ -81,8 +81,6 @@ function calculer() {
             resultat = division(nombre1,nombre2);
     }
 
-
-
     }
     equation.value = resultat;
     console.log(resultat);
