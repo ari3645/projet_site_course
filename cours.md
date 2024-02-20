@@ -43,12 +43,13 @@ document.getElementById("monId").textContent = "Nouveau texte !";
 ```
 
 Ajouter un écouteur d'évenements :
+(Au moment ou cet évenement à lieu, on excécute une fonction)
 
 ```sh
 document.getElementById("monBouton").addEventListener("click",function(){alert("Bouton cliqué !");
 });
 ```
-
+Callback = fonction passer en paramètre dans une autre fonction.
 
 ### Git 
 
