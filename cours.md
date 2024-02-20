@@ -51,6 +51,14 @@ document.getElementById("monBouton").addEventListener("click",function(){alert("
 ```
 Callback = fonction passer en paramètre dans une autre fonction.
 
+ On veut éviter le rechargement de la page.
+ Pour éviter ce comportement par défaut du formulaire, on peut utiliser la commande :
+
+ ```sh
+ event.preventDefault();
+ ```
+
+
 ### Git 
 
 Initialisé Git : 
