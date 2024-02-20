@@ -19,8 +19,6 @@ function division(a,b){
 
 }
 
-let equation = document.getElementById("equation");
-
 function ajouteroperation(valeur) {
     equation.value += valeur;
 }
@@ -29,7 +27,8 @@ function reset() {
     equation.value = "";
 }
 
-function calculer(equation) {
+function calculer() {
+    let equation = document.getElementById("equation");
     let nombre1 = "";
     let nombre2 = "";
     let operateur = "";
@@ -71,7 +70,41 @@ function calculer(equation) {
     } else if (operateur === "*") {
         resultat = multiplication(nombre1,nombre2);
     } else if (operateur === "/") {
-        resultat = division(nombre1,nombre2);
+        if (nombre2 === 0) {
+            resultat = "Impossible de diviser par 0";
+        } else {
+            resultat = division(nombre1,nombre2);
+    }
+
+    console.log(resultat);
+    return 0;
+}
+}
+
+function calcul() {
+    let premierNombre = document.getElementById("premierNombre").value;
+    let secondNombre = document.getElementById("secondNombre").value;
+    let operation = document.getElementById("operation").value;
+
+    premierNombre = parseInt(premierNombre);
+    secondNombre = parseInt(secondNombre);
+
+    // console.log(premierNombre);
+    // console.log(secondNombre);
+    // console.log(operation);
+
+    if (operation === "+") {
+        resultat = addition(premierNombre,secondNombre);
+    } else if (operation === "-") {
+        resultat = soustraction(premierNombre,secondNombre);
+    } else if (operation === "*") {
+        resultat = multiplication(premierNombre,secondNombre);
+    } else if (operation === "/") {
+        if (secondNombre === 0) {
+            resultat = "Impossible de diviser par 0";
+        } else {
+            resultat = division(premierNombre,secondNombre);
+        }
     }
 
     console.log(resultat);
