@@ -63,11 +63,16 @@ function calculer() {
     nombre2 = parseInt(nombre2);
     // console.log(nombre1);
     // console.log(nombre2);
+    // console.log(operateur);
+
     if (operateur === "+") {
+        // console.log("addition");
         resultat = addition(nombre1,nombre2);
     } else if (operateur === "-") {
+        // console.log("soustraction");
         resultat = soustraction(nombre1,nombre2);
     } else if (operateur === "*") {
+        // console.log("multiplication");
         resultat = multiplication(nombre1,nombre2);
     } else if (operateur === "/") {
         if (nombre2 === 0) {
@@ -76,9 +81,12 @@ function calculer() {
             resultat = division(nombre1,nombre2);
     }
 
+
+
+    }
+    equation.value = resultat;
     console.log(resultat);
     return 0;
-}
 }
 
 function calcul() {
@@ -107,6 +115,7 @@ function calcul() {
         }
     }
 
+    document.getElementById("resultat").textContent = "Le résultat de votre opération est : " + resultat;
     console.log(resultat);
     return 0;
 }
