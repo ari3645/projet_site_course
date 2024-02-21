@@ -58,8 +58,35 @@ Callback = fonction passer en paramètre dans une autre fonction.
  event.preventDefault();
  ```
 
+## Tableaux en JS
 
-### Git 
+Déclaration de variable
+
+```sh
+let tab = ["pomme","cerise",...]
+```
+
+### Méthodes des tableaux
+
+Ajouter un élément à la fin :
+
+```sh
+tab.push(var) #retourne la taille du tableau après avoir ajouté la variable
+```
+
+Enlever un élément dans un tableau :
+
+```sh
+tab.pop(index) #retourne l'élement enlevé
+```
+
+Crée un nouveau tableau avec les élément de tab
+
+```sh
+tab.slice() #retourne le tableau tab
+```
+
+# Git 
 
 Initialisé Git : 
 
@@ -89,7 +116,7 @@ Faire une sauvegarde (en donnant un message) :
 git commit -m "first commit"
 ```
 
-### Remarques
+# Remarques
 
 Balise script après le code html pour plus de performance.(Si fichier Js volumineux car code excécuter dans l'ordre)
 
