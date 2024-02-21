@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr" bg-success>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="calculatrice.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Cours Dev Web</title>
+</head>
+
+<body class="bg-success">
+        <div class="container-fluid" style="width: 700px;">
+            <h1 id="titre" class="mx-auto">Bienvenue sur votre liste de course !</h1>
+        </div>
+        <div class="row">
+            <div class="container my-5">
+                <div class="col-6 p-2">
+                    <img src="pomme.png" alt="pomme" style="width: 138px; height: 138px;">
+                    <img src="banane.png" alt="banane" style="width: 150px; height: 150px;" class="p-2">
+                    <img src="orange.png" alt="orange" style="width: 150px; height: 150px;" class="p-2">
+                    <img src="papaye.png" alt="papaye" style="width: 150px; height: 150px;" class="p-2">
+                    <img src="kiwi.png" alt="kiwi" style="width: 150px; height: 150px;" class="p-2">
+                </div>
+    
+                <div class="col-md-6 mb-3" style="width: 1000px;">
+                    <button onclick="ajouterItem(basket, 'Pomme',panierfinal, panier)" class="ms-2" id="BoutonPomme">Ajouter au panier</button>
+                    <button onclick="ajouterItem(basket,'Banane',panierfinal, panier)" class="ms-2" id="BoutonBanane">Ajouter au panier</button>
+                    <button onclick="ajouterItem(basket,'Orange',panierfinal,panier)" class="ms-2" id="BoutonOrange">Ajouter au panier</button>
+                    <button onclick="ajouterItem(basket,'Papaye',panierfinal,panier)" class="ms-2" id="BoutonPapaye">Ajouter au panier</button>
+                    <button onclick="ajouterItem(basket,'Kiwi',panierfinal,panier)" class="ms-2" id="BoutonKiwi">Ajouter au panier</button>
+                </div>
+            
+                <div class="col-md-6" style="width: 800px;">
+                    <img src="courgette.png" alt="courgette" style="width: 150px; height: 150px;">
+                    <img src="potiron.png" alt="potiron" style="width: 150px; height: 150px;">
+                    <img src="salade.png" alt="salade" style="width: 140px; height: 140px;">
+                    <img src="tomate.png" alt="tomate" style="width: 150px; height: 150px;">
+                    <img src="pdt.png" alt="pdt" style="width: 150px; height: 150px;">
+                </div>
+            
+                <div class="col-md-6 mb-3" style="width: 750px;">
+                    <button onclick="ajouterItem(basket, 'courgette', panierfinal,panier)" class="ms-2" id="BoutonCourgette">Ajouter au panier</button>
+                    <button onclick="ajouterItem(basket,'potiron',panierfinal,panier)" class="ms-2" id="BoutonPotiron">Ajouter au panier</button>
+                    <button onclick="ajouterItem(basket,'salade',panierfinal,panier)" class="ms-2" id="BoutonOrange">Ajouter au panier</button>
+                    <button onclick="ajouterItem(basket,'tomate',panierfinal,panier)" class="ms-2" id="BoutonPapaye">Ajouter au panier</button>
+                    <button onclick="ajouterItem(basket,'PommeDeTerre',panierfinal,panier)" class="ms-2" id="BoutonPDT">Ajouter au panier</button>
+                </div>
+            
+                <div class="col-md-6" style="width: 800px;">
+                    <img src="paprika.png" alt="paprika" style="width: 150px; height: 150px;">
+                    <img src="piment.png" alt="piment" style="width: 150px; height: 150px;">
+                    <img src="gingembre.png" alt="gingembre" style="width: 140px; height: 140px;">
+                    <img src="oignon.png" alt="oignon" style="width: 150px; height: 150px;">
+                    <img src="basilic.png" alt="basilic" style="width: 150px; height: 150px;">
+                </div>
+            
+                <div class="col-md-6 mb-3" style="width: 750px;">
+                    <button onclick="ajouterItem(basket, 'paprika',panierfinal,panier)" class="ms-2" id="BoutonPaprika">Ajouter au panier</button>
+                    <button onclick="ajouterItem(basket,'piment',panierfinal,panier)" class="ms-2" id="BoutonPiment">Ajouter au panier</button>
+                    <button onclick="ajouterItem(basket,'gingembre',panierfinal,panier)" class="ms-2" id="BoutonGingembre">Ajouter au panier</button>
+                    <button onclick="ajouterItem(basket,'oignon',panierfinal,panier)" class="ms-2" id="BoutonOignon">Ajouter au panier</button>
+                    <button onclick="ajouterItem(basket,'basilic',panierfinal,panier)" class="ms-2" id="BoutonBasilic">Ajouter au panier</button>
+                </div>
+                
+                <div class="container col-6">
+                    <div class="col-8 col-md-2 text-center">
+                        <h1> Panier </h1>
+                            <table id="tableau">
+                                <thead>
+                                    <tr>
+                                        <th> Produit | </th>
+                                        <th> Quantité | </th>
+                                        <th> Prix </th>
+                                    </tr>
+                                    <tr>
+                                        <p id="panier" class="p-2"></p>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            
+
+           
+
+    </header>
+   
+    <script src="liste_cours.js"></script>
+</body>
+</html>
