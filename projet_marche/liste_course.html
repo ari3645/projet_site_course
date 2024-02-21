@@ -13,13 +13,13 @@
             <h1 id="titre" class="mx-auto">Bienvenue sur votre liste de course !</h1>
         </div>
         <div class="row">
-            <div class="container my-5">
-                <div class="col-6 p-2">
-                    <img src="pomme.png" alt="pomme" style="width: 138px; height: 138px;">
-                    <img src="banane.png" alt="banane" style="width: 150px; height: 150px;" class="p-2">
-                    <img src="orange.png" alt="orange" style="width: 150px; height: 150px;" class="p-2">
-                    <img src="papaye.png" alt="papaye" style="width: 150px; height: 150px;" class="p-2">
-                    <img src="kiwi.png" alt="kiwi" style="width: 150px; height: 150px;" class="p-2">
+            <div class="container col-6">
+                <div class="col-md-6 p-2" style="width: 800px">
+                    <img src="pomme.png" alt="pomme" style="width: 140px; height: 140px;">
+                    <img src="banane.png" alt="banane" style="width: 150px; height: 150px;">
+                    <img src="orange.png" alt="orange" style="width: 150px; height: 150px;">
+                    <img src="papaye.png" alt="papaye" style="width: 145px; height: 145px;">
+                    <img src="kiwi.png" alt="kiwi" style="width: 140px; height: 140px;">
                 </div>
     
                 <div class="col-md-6 mb-3" style="width: 1000px;">
@@ -30,7 +30,7 @@
                     <button onclick="ajouterItem(basket,'Kiwi',panierfinal,panier)" class="ms-2" id="BoutonKiwi">Ajouter au panier</button>
                 </div>
             
-                <div class="col-md-6" style="width: 800px;">
+                <div class="col-md-6 p-2 mb-2" style="width: 800px;">
                     <img src="courgette.png" alt="courgette" style="width: 150px; height: 150px;">
                     <img src="potiron.png" alt="potiron" style="width: 150px; height: 150px;">
                     <img src="salade.png" alt="salade" style="width: 140px; height: 140px;">
@@ -61,9 +61,10 @@
                     <button onclick="ajouterItem(basket,'oignon',panierfinal,panier)" class="ms-2" id="BoutonOignon">Ajouter au panier</button>
                     <button onclick="ajouterItem(basket,'basilic',panierfinal,panier)" class="ms-2" id="BoutonBasilic">Ajouter au panier</button>
                 </div>
+            </div>
                 
-                <div class="container col-6">
-                    <div class="col-8 col-md-2 text-center">
+            <div class="container col-6">
+                <div class="col-8 col-md-2 text-center">
                         <h1> Panier </h1>
                             <table id="tableau">
                                 <thead>
@@ -80,12 +81,6 @@
                         </div>
                     </div>
                 </div>
-
-
-            </div>
-            
-
-           
 
     </header>
    
