@@ -42,12 +42,12 @@ function ajouterItem (basket, item, prixTotal, action) {
             // console.log(basket[item])
             // console.log(price[item])
             // console.log(basket[item] * price[item])
+
             row.cells[2].innerText = price[item] + " €"
             row.cells[3].innerText = basket[item] * price[item] + " €"  
         }
 
         prixTotal += price[item]
-        // console.log(prixTotal)
         document.getElementById("prixTotal").textContent = "Le prix total est de : " + prixTotal + " €";
         // console.log(basket)
 
@@ -57,19 +57,16 @@ function ajouterItem (basket, item, prixTotal, action) {
         }
         basket.length = 0
         prixTotal = 0
+        // console.log(prixTotal)
         document.getElementById("prixTotal").textContent = "Le prix total est de : " + prixTotal + " €";
 
         const props = Object.keys(basket)
         for (const prop of props) {
             delete basket[prop]
         }
-        // for (const prop in basket) {
-        //     if (basket.hasOwnProperty(prop)) {
-        //         delete basket[prop];
-        //     }
-        // }
     
         // console.log(basket, prixTotal)
         // console.log(basket.length)
     }
+    return prixTotal
 }

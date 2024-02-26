@@ -23,11 +23,11 @@
             </div>
     
             <div class="col-md-6 mb-3" style="width: 1000px;">
-                <button onclick="ajouterItem(basket, 'Pomme',prixTotal,'ajouter')" class="ms-2" id="BoutonPomme">Ajouter au panier</button>
-                <button onclick="ajouterItem(basket,'Banane',prixTotal,'ajouter')" class="ms-2" id="BoutonBanane">Ajouter au panier</button>
-                <button onclick="ajouterItem(basket,'Orange',prixTotal,'ajouter')" class="ms-2" id="BoutonOrange">Ajouter au panier</button>
-                <button onclick="ajouterItem(basket,'Papaye',prixTotal,'ajouter')" class="ms-2" id="BoutonPapaye">Ajouter au panier</button>
-                <button onclick="ajouterItem(basket,'Kiwi',prixTotal,'ajouter')" class="ms-2" id="BoutonKiwi">Ajouter au panier</button>
+                <button onclick="prixTotal = ajouterItem(basket, 'Pomme',prixTotal,'ajouter')" class="ms-2" id="BoutonPomme">Ajouter au panier</button>
+                <button onclick="prixTotal = ajouterItem(basket,'Banane',prixTotal,'ajouter')" class="ms-2" id="BoutonBanane">Ajouter au panier</button>
+                <button onclick="prixTotal = ajouterItem(basket,'Orange',prixTotal,'ajouter')" class="ms-2" id="BoutonOrange">Ajouter au panier</button>
+                <button onclick="prixTotal = ajouterItem(basket,'Papaye',prixTotal,'ajouter')" class="ms-2" id="BoutonPapaye">Ajouter au panier</button>
+                <button onclick="prixTotal = ajouterItem(basket,'Kiwi',prixTotal,'ajouter')" class="ms-2" id="BoutonKiwi">Ajouter au panier</button>
             </div>
             
             <div class="col-md-6 p-2 mb-2" style="width: 800px;">
@@ -39,11 +39,11 @@
             </div>
             
             <div class="col-md-6 mb-3" style="width: 750px;">
-                <button onclick="ajouterItem(basket, 'Courgette',prixTotal,'ajouter')" class="ms-2" id="BoutonCourgette">Ajouter au panier</button>
-                <button onclick="ajouterItem(basket,'Potiron',prixTotal,'ajouter')" class="ms-2" id="BoutonPotiron">Ajouter au panier</button>
-                <button onclick="ajouterItem(basket,'Salade',prixTotal,'ajouter')" class="ms-2" id="BoutonOrange">Ajouter au panier</button>
-                <button onclick="ajouterItem(basket,'Tomate',prixTotal,'ajouter')" class="ms-2" id="BoutonPapaye">Ajouter au panier</button>
-                <button onclick="ajouterItem(basket,'PommeDeTerre',prixTotal,'ajouter')" class="ms-2" id="BoutonPDT">Ajouter au panier</button>
+                <button onclick="prixTotal = ajouterItem(basket, 'Courgette',prixTotal,'ajouter')" class="ms-2" id="BoutonCourgette">Ajouter au panier</button>
+                <button onclick="prixTotal = ajouterItem(basket,'Potiron',prixTotal,'ajouter')" class="ms-2" id="BoutonPotiron">Ajouter au panier</button>
+                <button onclick="prixTotal = ajouterItem(basket,'Salade',prixTotal,'ajouter')" class="ms-2" id="BoutonOrange">Ajouter au panier</button>
+                <button onclick="prixTotal = ajouterItem(basket,'Tomate',prixTotal,'ajouter')" class="ms-2" id="BoutonPapaye">Ajouter au panier</button>
+                <button onclick="prixTotal = ajouterItem(basket,'PommeDeTerre',prixTotal,'ajouter')" class="ms-2" id="BoutonPDT">Ajouter au panier</button>
             </div>
             
             <div class="col-md-6" style="width: 800px;">
@@ -55,11 +55,11 @@
             </div>
             
             <div class="col-md-6 mb-3" style="width: 750px;">
-                <button onclick="ajouterItem(basket, 'Paprika',prixTotal,'ajouter')" class="ms-2" id="BoutonPaprika">Ajouter au panier</button>
-                <button onclick="ajouterItem(basket,'Piment',prixTotal,'ajouter')" class="ms-2" id="BoutonPiment">Ajouter au panier</button>
-                <button onclick="ajouterItem(basket,'Gingembre',prixTotal,'ajouter')" class="ms-2" id="BoutonGingembre">Ajouter au panier</button>
-                <button onclick="ajouterItem(basket,'Oignon',prixTotal,'ajouter')" class="ms-2" id="BoutonOignon">Ajouter au panier</button>
-                <button onclick="ajouterItem(basket,'Basilic',prixTotal,'ajouter')" class="ms-2" id="BoutonBasilic">Ajouter au panier</button>
+                <button onclick="prixTotal = ajouterItem(basket, 'Paprika',prixTotal,'ajouter')" class="ms-2" id="BoutonPaprika">Ajouter au panier</button>
+                <button onclick="prixTotal = ajouterItem(basket,'Piment',prixTotal,'ajouter')" class="ms-2" id="BoutonPiment">Ajouter au panier</button>
+                <button onclick="prixTotal = ajouterItem(basket,'Gingembre',prixTotal,'ajouter')" class="ms-2" id="BoutonGingembre">Ajouter au panier</button>
+                <button onclick="prixTotal = ajouterItem(basket,'Oignon',prixTotal,'ajouter')" class="ms-2" id="BoutonOignon">Ajouter au panier</button>
+                <button onclick="prixTotal = ajouterItem(basket,'Basilic',prixTotal,'ajouter')" class="ms-2" id="BoutonBasilic">Ajouter au panier</button>
             </div>
         </div>
                 
@@ -82,7 +82,7 @@
             </div>
             <p id="prixTotal"></p>
             <div class="mt-3">
-                <button onclick="ajouterItem(basket, 'None', prixTotal,'retirer')" class="btn btn-danger">Vider le panier</button>
+                <button onclick="prixTotal = ajouterItem(basket, 'None', prixTotal,'retirer')" class="btn btn-danger">Vider le panier</button>
             </div>
         </div>
     </div>
